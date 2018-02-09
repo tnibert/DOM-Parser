@@ -16,13 +16,15 @@ int main(int argc, char *argv[])
 {
 
     char ch;
-    FILE * fp;
+    FILE * fp = fopen(argv[1], "r");
 
     for(struct node * cur = NULL; (ch = getc(fp)) != EOF;)
     {
+        printf("%c", ch);
         // if char is '<'
             // create new child node and enter
     }
+    printf("\n");
 
     return 0;
 }
